@@ -1,8 +1,11 @@
 body {
-    position: relative; 
-    min-height: 100vh; 
-    margin: 0; 
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 nav {
@@ -38,7 +41,7 @@ nav {
     color: #f2f2f2;
     padding: 2vw 3.5vw;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 32px;
 }
 
 .nav-active {
@@ -50,18 +53,19 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 .center-image {
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .center-image img {
     margin: 0;
     padding: 0;
-    max-width: 33.33%; 
+    max-width: 33.33%;
     height: auto;
 }
 
@@ -74,12 +78,12 @@ nav {
 .news-header {
     background-color: #f1f1f1;
     padding: 1vw;
-    height: 200px; 
+    height: 200px;
 }
 
 .news-body {
     padding: 1vw;
-    height: 300px; 
+    height: 300px;
 }
 
 .news-text {
@@ -92,8 +96,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; 
-    margin-top: 20px; 
+    height: 10vh;
+    margin-top: 20px;
 }
 
 .main-wrapper {
@@ -105,7 +109,7 @@ nav {
 
 .main-text-wrapper {
     color: green;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .tickets-info-inputs {
@@ -127,23 +131,33 @@ input {
 }
 
 footer {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+    text-align: left;
     background-color: rgb(44, 102, 210);
     color: white;
+    padding: 20px;
+    flex-shrink: 0;
 }
 
 .footer-list {
-    margin: 0;
-    overflow: hidden;
-    height: 5vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.telephone, .email {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+}
 
-
+.phone, .mail {
+    margin-right: 10px; 
+    width: 30px; 
+    height: 30px; 
+}
