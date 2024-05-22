@@ -44,3 +44,18 @@ nav {
     border-radius: 4vw;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.center-image {
+    display: flex;
+}
+
+.center-image img {
+    margin: 0;
+    padding: 0;
+    max-width: 33.33%; /* Set max-width to divide the row equally */
+    height: auto; /* Maintain aspect ratio */
+}
