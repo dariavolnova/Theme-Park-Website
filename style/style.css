@@ -1,3 +1,8 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     position: relative;
     min-height: 100vh;
@@ -5,7 +10,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-
 }
 
 nav {
@@ -18,7 +22,7 @@ nav {
     margin: 0vw;
     overflow: hidden;
     background-color: rgb(44, 102, 210);
-    height: 5vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,22 +53,13 @@ nav {
     border-radius: 4vw;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
 .center-image {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-top: 65px;
+    width: 100%;
 }
 
 .center-image img {
-    margin: 0;
-    padding: 0;
     max-width: 33.33%;
     height: auto;
 }
@@ -73,6 +68,7 @@ nav {
     width: 20%;
     float: left;
     border-right: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
 }
 
 .news-header {
@@ -85,40 +81,22 @@ nav {
     margin: 0 0 10px 0;
 }
 
-.news-header-text-body {
-    font-size: 22px;
-}
-
 .news-body {
     font-size: 1em; 
 }
 
-.news-text {
-    text-decoration: none;
-    color: #333;
-    font-size: 22px;
+.news-text-body {
+    font-size: 1em;
 }
 
 .main-center {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
-    box-sizing: border-box;
     text-align: center;
 }
 
-.main-wrapper {
-    width: 100%;
-}
-
-.main-text-wrapper h1,
-.main-text-wrapper h2 {
-    margin: 10px 0;
-}
-
 .slogan h2 {
-    font-size: 32px;
+    font-size: 48px;
     color: rgb(44, 102, 210);
 }
 
@@ -128,8 +106,6 @@ nav {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center; /* Center items horizontally */
     align-items: stretch; /* Stretch items to have equal height */
-    padding: 0; 
-    margin: 0; 
 }
 
 .slogan-block-card {
@@ -138,10 +114,10 @@ nav {
     flex-basis: 26%; /* Each card takes roughly 21% of the row */
     margin: 1em; 
     box-sizing: border-box; 
-    display: flex; 
+    /* display: flex;  */
     flex-direction: column;
-    align-items: center; 
-    text-align: center;
+    /* align-items: center;  */
+    /* text-align: center; */
     background-color: #f0f0f0; 
 }
 
@@ -164,26 +140,19 @@ nav {
 .tickets-info-inputs {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the labels and inputs */
+    /* align-items: center; Center the labels and inputs */
 }
 
 .tickets-info-inputs label {
-    width: 100%;
+    /* width: 100%; */
     margin: 5px 0;
     text-align: left; /* Align text to the left within labels */
 }
 
 .tickets-info-inputs input {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-.tickets-info-inputs input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 5px; 
     box-sizing: border-box;
 }
 
@@ -196,34 +165,31 @@ nav {
     font-size: 32;
 }
 
-
 .about-us .main-text {
     padding: 10px;
 }
 
 footer {
-    text-align: left;
     background-color: rgb(44, 102, 210);
     color: white;
-    padding: 20px;
-    flex-shrink: 0;
+    padding: 10px;
 }
 
 .footer-list {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
 }
 
 .contacts-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .telephone, .email {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     margin: 10px 0; 
 }
 
@@ -237,17 +203,17 @@ footer {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around; 
-    align-items: center; 
-    padding: 10px; 
+    /* align-items: center;  */
+    margin: 10px 0; 
 }
 
 .tiktok, .facebook, .instagram, .x {
     display: flex; 
     align-items: center; 
-    justify-content: flex-start; 
+    /* justify-content: flex-start;  */
     width: 30%; 
     margin: 7px; 
-    box-sizing: border-box; 
+    /* box-sizing: border-box;  */
 }
 
 .tiktok_icon, .facebook_icon, .instagram_icon, .x_icon {
@@ -257,9 +223,9 @@ footer {
 }
 
 .social_media-section a {
-    text-decoration: none; 
-    color: white; 
-    font-size: 1em; 
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Darker text color for readability */
+    font-size: 1em; /* Adjust font size */
 }
 
 
