@@ -170,8 +170,27 @@ footer {
     margin: 10px 0; 
 }
 
-.phone, .mail {
+.phone_icon, .mail_icon {
     margin-right: 10px; 
     width: 30px; 
     height: 30px; 
 }
+
+.social_media-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tiktok, .facebook, .x, .instagram {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.tiktok_icon, .facebook_icon, .x_icon, .instagram_icon {
+    margin-right: 10px; 
+    width: 30px; 
+    height: 30px; 
+}
+
