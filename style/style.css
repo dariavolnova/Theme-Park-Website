@@ -77,12 +77,12 @@ nav {
 }
 
 .news-header-text {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     margin: 0 0 10px 0;
 }
 
 .news-body {
-    font-size: 1em; 
+    font-size: 1em;
 }
 
 .news-text-body {
@@ -101,58 +101,84 @@ nav {
 }
 
 .slogan-block-list {
-    list-style: none; 
-    display: flex; 
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center items horizontally */
-    align-items: stretch; /* Stretch items to have equal height */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: stretch;
+    /* Stretch items to have equal height */
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .slogan-block-card {
-    border-radius: 10px; 
-    padding: 1em; 
-    flex-basis: 26%; /* Each card takes roughly 21% of the row */
-    margin: 1em; 
-    box-sizing: border-box; 
-    /* display: flex;  */
+    --borderWidth: 5px;
+    border-radius: var(--borderWidth);
+    padding: 1em;
+    flex-basis: 26%;
+    margin: 1em;
+    box-sizing: border-box;
     flex-direction: column;
-    /* align-items: center;  */
-    /* text-align: center; */
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.slogan-block-card:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
 
 .slogan-block-image img {
-    max-width: 100%; 
-    border-radius: 10px; 
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .slogan-block-link {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .slogan-block-text {
-    margin-top: 1em; 
-    font-size: 1.3em; 
-    color: #333; 
+    margin-top: 1em;
+    font-size: 1.3em;
+    color: #333;
 }
 
 .tickets-info-inputs {
     display: flex;
     flex-direction: column;
-    /* align-items: center; Center the labels and inputs */
 }
 
 .tickets-info-inputs label {
-    /* width: 100%; */
     margin: 5px 0;
-    text-align: left; /* Align text to the left within labels */
+    text-align: left;
 }
 
 .tickets-info-inputs input {
     width: 100%;
     padding: 5px;
-    margin-top: 5px; 
+    margin-top: 5px;
     box-sizing: border-box;
 }
 
@@ -177,57 +203,53 @@ footer {
 
 .footer-list {
     display: flex;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
 }
 
 .contacts-section {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
 }
 
-.telephone, .email {
-    /* display: flex; */
-    /* align-items: center; */
-    margin: 10px 0; 
+.telephone,
+.email {
+    margin: 10px 0;
 }
 
-.phone_icon, .mail_icon {
-    margin-right: 10px; 
-    width: 30px; 
-    height: 30px; 
+.phone_icon,
+.mail_icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
 }
 
 .social_media-section {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    /* align-items: center;  */
-    margin: 10px 0; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
 }
 
-.tiktok, .facebook, .instagram, .x {
-    display: flex; 
-    align-items: center; 
-    /* justify-content: flex-start;  */
-    width: 30%; 
-    margin: 7px; 
-    /* box-sizing: border-box;  */
+.tiktok,
+.facebook,
+.instagram,
+.x {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 7px;
 }
 
-.tiktok_icon, .facebook_icon, .instagram_icon, .x_icon {
-    margin-right: 10px; 
+.tiktok_icon,
+.facebook_icon,
+.instagram_icon,
+.x_icon {
+    margin-right: 10px;
     width: 30px;
-    height: 30px; 
+    height: 30px;
 }
 
 .social_media-section a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Darker text color for readability */
-    font-size: 1em; /* Adjust font size */
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
 }
-
-
-
-
