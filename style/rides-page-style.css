@@ -1,0 +1,37 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e4176;
+    /* Dark blue background */
+    color: #fff;
+}
+
+header {
+    background-color: #0288d1;
+    /* Light blue header */
+    color: #fff;
+    font-size:20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 28px;
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-active {
+    background-color: rgb(289, 189, 20);
+    border-radius: 4vw;
+}

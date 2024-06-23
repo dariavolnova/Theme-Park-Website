@@ -1,0 +1,165 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e4176;
+    /* Dark blue background */
+    color: #fff;
+}
+
+header {
+    background-color: #0288d1;
+    /* Light blue header */
+    color: #fff;
+    font-size:20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 28px;
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-active {
+    background-color: rgb(289, 189, 20);
+    border-radius: 4vw;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3em;
+    /* Increased font size for hero heading */
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-section {
+    margin-bottom: 20px;
+}
+
+.events-section h2 {
+    font-size: 2.5em;
+    /* Increased font size for section headings */
+    margin-bottom: 10px;
+    color: #fff;
+    /* White headings */
+}
+
+.events-grid {
+    display: flex;
+    flex-direction: column;
+    /* Display cards vertically */
+    gap: 20px;
+    background-color: #001f4d;
+    /* Dark blue background for event grids */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event-card {
+    background-color: #b3e5fc;
+    /* Light blue cards */
+    border: 1px solid #0288d1;
+    width: 100%;
+    /* Full width */
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    margin: 10px;
+    font-size: 2em;
+    /* Increased font size for event titles */
+    color: #0288d1;
+    /* Light blue for event titles */
+}
+
+.event-card p {
+    margin: 10px;
+    color: #666;
+}
+
+.event-card button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    /* Light blue button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-bar {
+    display: flex;
+
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #0288d1;
+    /* Light blue filter bar */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.filter-bar select,
+.filter-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    /* White background for inputs */
+}
+
+footer {
+    background-color: #0288d1;
+    /* Light blue footer */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social-media img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}

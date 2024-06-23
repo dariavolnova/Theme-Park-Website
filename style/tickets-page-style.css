@@ -36,53 +36,18 @@ header nav a {
     border-radius: 4vw;
 }
 
-.center-image {
-    display: flex;
-    width: 100%;
-}
-
-.center-image img {
-    max-width: 33.33%;
-    height: auto;
-}
-
-.side-news {
-    width: 20%;
-    float: left;
-    border-right: 0.2vw solid black;
-    border-bottom: 0.2vw solid black;
-}
-
-.news {
-    padding: 20px;
-    background-color: #1e4176;
-}
-
-.news-header-text {
-    font-size: 1.5em;
-    margin: 0 0 10px 0;
-}
-
-.news-body {
-    font-size: 1em;
-}
-
-.news-text-body {
-    font-size: 1em;
-}
-
-.main-center {
-    display: flex;
-    padding: 20px;
+.tickets-text h2 {
+    font-size: 48px;
+    color: white;
     text-align: center;
 }
 
-.slogan h2 {
-    font-size: 48px;
-    color: white;
+.ticket-block-price {
+    color: black;
+    text-align: center;
 }
 
-.slogan-block-list {
+.ticket-block-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +70,7 @@ header nav a {
 	}
 }
 
-.slogan-block-card {
+.ticket-block-card {
     --borderWidth: 5px;
     border-radius: var(--borderWidth);
     padding: 1em;
@@ -117,7 +82,7 @@ header nav a {
     position: relative;
 }
 
-.slogan-block-card:after {
+.ticket-block-card:after {
     content: '';
     position: absolute;
     top: calc(-1 * var(--borderWidth));
@@ -131,107 +96,18 @@ header nav a {
     background-size: 300% 300%;
 }
 
-.slogan-block-image img {
+.ticket-block-image img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.slogan-block-link {
+.ticket-block-link {
     text-decoration: none;
     color: inherit;
 }
 
-.slogan-block-text {
+.ticket-block-text {
     margin-top: 1em;
     font-size: 1.3em;
     color: #333;
-}
-
-.tickets-info-inputs {
-    display: flex;
-    flex-direction: column;
-}
-
-.tickets-info-inputs label {
-    margin: 5px 0;
-    text-align: left;
-}
-
-.tickets-info-inputs input {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-.about-us h2 {
-    color: rgb(44, 102, 210);
-}
-
-.about-us h3 {
-    margin: 10px;
-    font-size: 32;
-}
-
-.about-us .main-text {
-    padding: 10px;
-}
-
-footer {
-    background-color: #0288d1;
-    color: white;
-    padding: 10px;
-}
-
-.footer-list {
-    display: flex;
-}
-
-.contacts-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.telephone,
-.email {
-    margin: 10px 0;
-}
-
-.phone_icon,
-.mail_icon {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-}
-
-.social_media-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-
-.tiktok,
-.facebook,
-.instagram,
-.x {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    margin: 7px;
-}
-
-.tiktok_icon,
-.facebook_icon,
-.instagram_icon,
-.x_icon {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-}
-
-.social_media-section a {
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
 }
