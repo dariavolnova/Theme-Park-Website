@@ -157,22 +157,28 @@ nav a:hover {
     color: #333;
 }
 
-.tickets-info-inputs {
-    display: flex;
-    flex-direction: column;
+.tickets {
+    background: #0288d1;
+    border: 1px solid #0288d1;
+    box-shadow: 4px 8px;
+    padding: 10px; 
 }
 
-.tickets-info-inputs label {
-    margin: 5px 0;
-    text-align: left;
+.ticket-button {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #ff6602 0%, #fd332d 100%);
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block; 
 }
 
-.tickets-info-inputs input {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    box-sizing: border-box;
+.read-more {
+    display: inline-block; 
+    color: white; 
+    text-decoration: underline; 
 }
+
 
 .about-us h2 {
     color: white;
@@ -185,6 +191,7 @@ nav a:hover {
 
 .about-us .main-text {
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 footer {
