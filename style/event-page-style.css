@@ -31,9 +31,19 @@ header nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    border-bottom: 2px solid white;
+    transition: 0.05s;
+}
+
 .nav-active {
-    background-color: rgb(289, 189, 20);
-    border-radius: 4vw;
+    border-bottom: 2px solid white;
+    transition: padding 0.3s;
+}
+
+.nav-active:hover {
+    padding-bottom: 6px;
+    transition: 0.2s;
 }
 
 .hero {
