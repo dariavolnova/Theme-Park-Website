@@ -17,7 +17,7 @@ header {
     background-color: #0288d1;
     /* Light blue header */
     color: #fff;
-    font-size:20px;
+    font-size: 20px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -104,15 +104,17 @@ nav a:hover {
 }
 
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .slogan-block-card {
@@ -161,7 +163,7 @@ nav a:hover {
     background: #0288d1;
     border: 1px solid #0288d1;
     box-shadow: 4px 8px;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .ticket-button {
@@ -170,13 +172,13 @@ nav a:hover {
     background: linear-gradient(to right, #ff6602 0%, #fd332d 100%);
     border-radius: 10px;
     padding: 20px;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .read-more {
-    display: inline-block; 
-    color: white; 
-    text-decoration: underline; 
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
 }
 
 
