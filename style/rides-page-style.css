@@ -41,9 +41,9 @@ nav a:hover {
     transition: 0.2s;
 }
 
+/* settings for the whole footer */
 footer {
     background-color: #0288d1;
-    /* Light blue footer */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -52,11 +52,12 @@ footer {
     margin: 0 auto;
 }
 
+/* settings for each image in footer */
 footer .social-media img {
-    width: 25px;
-    margin-left: 10px;
+    max-width: 36px;
 }
 
+/* settings for privacy and terms of service in footer */
 footer a {
     color: #fff;
     margin-left: 20px;

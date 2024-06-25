@@ -45,14 +45,19 @@ nav a:hover {
     transition: 0.2s;
 }
 
+.tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* settings for top text */
 .tickets-text h2 {
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     font-size: 3em;
-    text-align: center;
 }
 
 /* settings for filter bar section */
@@ -77,28 +82,28 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.ticket-block-price {
-    color: black;
-    text-align: center;
-    font-size: 22px;
-    margin-top: 5px;
-}
-
-.old-price {
-    text-decoration: line-through;
-    text-decoration-color: red;
-    text-decoration-thickness: 3px;
-}
-
+/* settings for all ticket cards */
 .ticket-block-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-    justify-content: center;
-    /* Center items horizontally */
-    align-items: stretch;
-    /* Stretch items to have equal height */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    align-items: stretch; /* Stretch items to have equal height */
+}
+
+/* settings for price inside each card */
+.ticket-block-price {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 8px;
+}
+
+/* settings for old price line inside each card */
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 0, 0, 0.824);
+    text-decoration-thickness: 3px;
 }
 
 /* function that gives movements to gradient */
@@ -124,6 +129,7 @@ nav a:hover {
     }
 }
 
+/* settings for each card */
 .ticket-block-card {
     --borderWidth: 5px;
     border-radius: var(--borderWidth);
@@ -136,6 +142,7 @@ nav a:hover {
     position: relative;
 }
 
+/* modifies gradient border of each card */
 .ticket-block-card:after {
     content: '';
     position: absolute;
@@ -150,16 +157,13 @@ nav a:hover {
     background-size: 300% 300%;
 }
 
+/* setting for image inside card */
 .ticket-block-image img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.ticket-block-link {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* setting for text inside card */
 .ticket-block-text {
     margin-top: 1em;
     font-size: 1.3em;
