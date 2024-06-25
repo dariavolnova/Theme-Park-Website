@@ -1,61 +1,63 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
+/* main settings for the whole page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1e4176;
-    /* Dark blue background */
     color: #fff;
 }
 
+/* settings for a header */
 header {
     background-color: #0288d1;
-    /* Light blue header */
     color: #fff;
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 22px;
+    padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav a {
+/* setting for navigation buttons in a header */
+nav a {
     font-size: 28px;
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
 }
 
+/* effect on navigation buttons when is hovering */
 nav a:hover {
     border-bottom: 2px solid white;
     transition: 0.05s;
 }
 
+/* settings for navigation active button (this page) */
 .nav-active {
     border-bottom: 2px solid white;
     transition: padding 0.3s;
 }
 
+/* effect on navigation active button (this page) when is hovering*/
 .nav-active:hover {
     padding-bottom: 6px;
     transition: 0.2s;
 }
 
+/* settings for top images */
 .center-image {
     display: flex;
     width: 100%;
 }
 
+/* settings for each image at the top */
 .center-image img {
     max-width: 33.33%;
     height: auto;
 }
 
+/* settings for recent news column */
 .side-news {
     width: 20%;
     float: left;
@@ -63,35 +65,42 @@ nav a:hover {
     border-bottom: 0.2vw solid black;
 }
 
+/* settings of padding for everything inside side-news */
 .news {
-    padding: 20px;
-    background-color: #1e4176;
+    padding: 10px;
 }
 
+/* settings for "recent news" text */
+.news h2 {
+    border-bottom: 0.2vw solid black;
+}
+
+/* settings for each header of the news */
 .news-header-text {
     font-size: 1.5em;
     margin: 0 0 10px 0;
 }
 
-.news-body {
-    font-size: 1em;
-}
-
+/* setting for text of news */
 .news-text-body {
     font-size: 1em;
+    text-decoration: none;
+    color: white;
 }
 
+/* setting for main part to the right of news */
 .main-center {
     display: flex;
     padding: 20px;
     text-align: center;
 }
 
+/* setting for "Why we" text */
 .slogan h2 {
     font-size: 48px;
-    color: white;
 }
 
+/* settings for cards */
 .slogan-block-list {
     list-style: none;
     display: flex;
@@ -103,13 +112,22 @@ nav a:hover {
     /* Stretch items to have equal height */
 }
 
+/* function that gives movements to gradient */
 @keyframes animatedgradient {
     0% {
         background-position: 0% 50%;
     }
 
+    25% {
+        background-position: 25% 50%;
+    }
+
     50% {
         background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 25% 50%;
     }
 
     100% {
@@ -117,10 +135,12 @@ nav a:hover {
     }
 }
 
+/* settings for each card */
 .slogan-block-card {
     --borderWidth: 5px;
     border-radius: var(--borderWidth);
     padding: 1em;
+    /* space that each card takes */
     flex-basis: 26%;
     margin: 1em;
     box-sizing: border-box;
@@ -129,6 +149,7 @@ nav a:hover {
     position: relative;
 }
 
+/* modifies gradient border of each card */
 .slogan-block-card:after {
     content: '';
     position: absolute;
@@ -143,29 +164,27 @@ nav a:hover {
     background-size: 300% 300%;
 }
 
+/* setting for image inside card */
 .slogan-block-image img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.slogan-block-link {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* setting for text inside card */
 .slogan-block-text {
     margin-top: 1em;
     font-size: 1.3em;
     color: #333;
 }
 
+/* setting for frame with ticket advertisments */
 .tickets {
     background: #0288d1;
-    border: 1px solid #0288d1;
-    box-shadow: 4px 8px;
-    padding: 10px;
+    box-shadow: 8px 8px;
+    padding: 1px;
 }
 
+/* setting for button inside ticket advertisments */
 .ticket-button {
     text-decoration: none;
     color: white;
@@ -175,30 +194,24 @@ nav a:hover {
     display: inline-block;
 }
 
+/* setting for "read more" text link inside ticket advertisments */
 .read-more {
     display: inline-block;
     color: white;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 
-
-.about-us h2 {
-    color: white;
-}
-
+/* settings for main text in invitation */
 .about-us h3 {
-    margin: 10px;
-    font-size: 32;
-}
-
-.about-us .main-text {
+    font-size: 18px;
     padding: 10px;
     margin-bottom: 30px;
 }
 
+/* settings for the whole footer */
 footer {
     background-color: #0288d1;
-    /* Light blue footer */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -207,11 +220,12 @@ footer {
     margin: 0 auto;
 }
 
+/* settings for each image in footer */
 footer .social-media img {
-    width: 25px;
-    margin-left: 10px;
+    max-width: 36px;
 }
 
+/* settings for privacy and terms of service in footer */
 footer a {
     color: #fff;
     margin-left: 20px;

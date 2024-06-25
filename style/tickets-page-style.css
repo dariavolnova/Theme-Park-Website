@@ -1,55 +1,80 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
+/* main settings for the whole page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1e4176;
-    /* Dark blue background */
     color: #fff;
 }
 
+/* settings for a header */
 header {
     background-color: #0288d1;
-    /* Light blue header */
     color: #fff;
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 22px;
+    padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav a {
+/* setting for navigation buttons in a header */
+nav a {
     font-size: 28px;
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
 }
 
+/* effect on navigation buttons when is hovering */
 nav a:hover {
     border-bottom: 2px solid white;
     transition: 0.05s;
 }
 
+/* settings for navigation active button (this page) */
 .nav-active {
     border-bottom: 2px solid white;
     transition: padding 0.3s;
 }
 
+/* effect on navigation active button (this page) when is hovering*/
 .nav-active:hover {
     padding-bottom: 6px;
     transition: 0.2s;
 }
 
 .tickets-text h2 {
-    font-size: 48px;
-    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3em;
     text-align: center;
+}
+
+/* settings for filter bar section */
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-width: fit-content;
+    background-color: #0288d1; /* Light blue filter bar */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* settings for filter bar sections */
+.filter-bar select,
+.filter-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 .ticket-block-price {
@@ -57,6 +82,12 @@ nav a:hover {
     text-align: center;
     font-size: 22px;
     margin-top: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
 }
 
 .ticket-block-list {
@@ -70,13 +101,22 @@ nav a:hover {
     /* Stretch items to have equal height */
 }
 
+/* function that gives movements to gradient */
 @keyframes animatedgradient {
     0% {
         background-position: 0% 50%;
     }
 
+    25% {
+        background-position: 25% 50%;
+    }
+
     50% {
         background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 25% 50%;
     }
 
     100% {
@@ -127,9 +167,9 @@ nav a:hover {
     list-style-position: outside;
 }
 
+/* settings for the whole footer */
 footer {
     background-color: #0288d1;
-    /* Light blue footer */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -138,11 +178,12 @@ footer {
     margin: 0 auto;
 }
 
+/* settings for each image in footer */
 footer .social-media img {
-    width: 25px;
-    margin-left: 10px;
+    max-width: 36px;
 }
 
+/* settings for privacy and terms of service in footer */
 footer a {
     color: #fff;
     margin-left: 20px;

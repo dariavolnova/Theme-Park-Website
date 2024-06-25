@@ -1,151 +1,149 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
+/* main settings for the whole page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1e4176;
-    /* Dark blue background */
     color: #fff;
 }
 
+/* settings for a header */
 header {
     background-color: #0288d1;
-    /* Light blue header */
     color: #fff;
-    font-size:20px;
-    padding: 10px 20px;
+    font-size: 22px;
+    padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav a {
+/* setting for navigation buttons in a header */
+nav a {
     font-size: 28px;
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
 }
 
+/* effect on navigation buttons when is hovering */
 nav a:hover {
     border-bottom: 2px solid white;
     transition: 0.05s;
 }
 
+/* settings for navigation active button (this page) */
 .nav-active {
     border-bottom: 2px solid white;
     transition: padding 0.3s;
 }
 
+/* effect on navigation active button (this page) when is hovering*/
 .nav-active:hover {
     padding-bottom: 6px;
     transition: 0.2s;
 }
 
+/* setting for "events" top text */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 100px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-size: 3em;
-    /* Increased font size for hero heading */
     text-align: center;
 }
 
+/* setting for section titles text */
 .hero h2 {
-    margin-top: 150px;
+    margin-top: 18vh;
 }
 
+/* setting for a page wrapper */
 .content {
     padding: 5px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.events-section {
-    margin-bottom: 20px;
-}
-
+/* setting for title inside of a card */
 .events-section h2 {
     font-size: 2.5em;
     /* Increased font size for section headings */
     margin-bottom: 10px;
-    color: #fff;
-    /* White headings */
 }
 
+/* setting for all upcoming events column */
 .events-grid {
     display: flex;
-    flex-direction: column;
-    /* Display cards vertically */
+    flex-direction: column; /* Display cards vertically */
     gap: 20px;
-    background-color: #001f4d;
-    /* Dark blue background for event grids */
+    background-color: #001f4d; /* Dark blue background for event grids */
     padding: 20px;
     border-radius: 8px;
 }
 
+/* setting for each upcoming events card */
 .event-card {
-    background-color: #b3e5fc;
-    /* Light blue cards */
+    background-color: #b3e5fc; /* Light blue cards */
     border: 1px solid #0288d1;
-    width: 100%;
-    /* Full width */
+    width: 100%; /* Full width */
     box-sizing: border-box;
     overflow: hidden;
+    border-radius: 8px;
     transition: transform 0.2s;
 }
 
+/* setting for each upcoming events card when is hovering */
 .event-card:hover {
     transform: scale(1.02);
 }
 
+/* setting for each upcoming events image inside the card */
 .event-card img {
     width: 100%;
-    height: 150px;
+    height: 20vh;
     object-fit: cover;
 }
 
+/* setting for each text title inside the card */
 .event-card h3 {
     margin: 10px;
-    font-size: 2em;
-    /* Increased font size for event titles */
-    color: #0288d1;
-    /* Light blue for event titles */
+    font-size: 2em; /* Increased font size for event titles */
+    color: #0288d1; /* Light blue for event titles */
 }
 
+/* setting for each text inside the card */
 .event-card p {
     margin: 10px;
     color: #666;
 }
 
+/* setting for each button inside the card */
 .event-card button {
     margin: 10px;
-    padding: 10px 20px;
-    background-color: #0288d1;
-    /* Light blue button */
+    padding: 20px 20px;
+    background-color: #0288d1; /* Light blue button */
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
+/* settings for filter bar section */
 .filter-bar {
     display: flex;
-
     gap: 10px;
     margin-bottom: 20px;
-    background-color: #0288d1;
-    /* Light blue filter bar */
+    background-color: #0288d1; /* Light blue filter bar */
     padding: 10px;
     border-radius: 8px;
 }
 
+/* settings for filter bar sections */
 .filter-bar select,
 .filter-bar input {
     padding: 10px;
@@ -156,9 +154,9 @@ nav a:hover {
     /* White background for inputs */
 }
 
+/* settings for the whole footer */
 footer {
     background-color: #0288d1;
-    /* Light blue footer */
     color: #fff;
     padding: 20px;
     display: flex;
@@ -167,11 +165,12 @@ footer {
     margin: 0 auto;
 }
 
+/* settings for each image in footer */
 footer .social-media img {
-    width: 25px;
-    margin-left: 10px;
+    max-width: 36px;
 }
 
+/* settings for privacy and terms of service in footer */
 footer a {
     color: #fff;
     margin-left: 20px;

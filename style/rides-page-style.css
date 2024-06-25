@@ -1,8 +1,3 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,8 +12,8 @@ header {
     background-color: #0288d1;
     /* Light blue header */
     color: #fff;
-    font-size:20px;
-    padding: 10px 20px;
+    font-size: 22px;
+    padding: 1px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
