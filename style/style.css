@@ -17,6 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 /* setting for navigation buttons in a header */
@@ -45,10 +47,64 @@ nav a:hover {
     transition: 0.2s;
 }
 
+#menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav-links a {
+        font-size: calc(3vw - 1%)
+    }
+    header h1 {
+        font-size: calc(4vw - 1%);
+    }
+    .side-news {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: #0288d1;
+        z-index: 3;
+    }
+    .nav-links a {
+        margin: 10px 0;
+        text-align: center;
+        padding: 10px;
+        border-top: 1ps solid rgba(255, 255, 255, 0.2)
+    }
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+}
+
 /* settings for top images */
 .center-image {
     display: flex;
     width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 /* settings for each image at the top */
@@ -177,6 +233,50 @@ nav a:hover {
     color: #333;
 }
 
+@media(max-width: 1100px) {
+    .slogan-block-card {
+        flex-basis: 35%;
+    }
+}
+
+@media(max-width: 768px) {
+    .slogan-block-card {
+        flex-basis: 50%;
+    }
+    .center-image img:nth-child(n+1) {
+        display: none;
+    }
+    .center-image img:nth-child(2) {
+        display: block;
+        max-width: 50%;
+    }
+    .center-image img:nth-child(1) {
+        display: block;
+        max-width: 50%;
+    }
+    .center-image {
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .slogan-block-card {
+        flex-basis: 100%;
+    }
+    .center-image img:nth-child(n+2) {
+        display: none;
+    }
+    .center-image img:nth-child(1) {
+        display: block;
+        max-width: 100%;
+    }
+    .center-image {
+        display: block;
+        text-align: center;
+    }
+}
+ 
 /* setting for frame with ticket advertisments */
 .tickets {
     background: #0288d1;
