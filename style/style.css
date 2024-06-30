@@ -95,7 +95,6 @@ nav a:hover {
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }
-
 }
 
 /* settings for top images */
