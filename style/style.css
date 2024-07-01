@@ -27,6 +27,7 @@ nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    position: relative;
 }
 
 /* effect on navigation buttons when is hovering */
@@ -39,12 +40,6 @@ nav a:hover {
 .nav-active {
     border-bottom: 2px solid white;
     transition: padding 0.3s;
-}
-
-/* effect on navigation active button (this page) when is hovering*/
-.nav-active:hover {
-    padding-bottom: 6px;
-    transition: 0.2s;
 }
 
 #menu-icon {
@@ -63,19 +58,22 @@ nav a:hover {
     .nav-links a {
         font-size: calc(3vw - 1%)
     }
+
     header h1 {
         font-size: calc(4vw - 1%);
     }
+
     .side-news {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -86,14 +84,31 @@ nav a:hover {
         background-color: #0288d1;
         z-index: 3;
     }
+
     .nav-links a {
         margin: 10px 0;
         text-align: center;
         padding: 10px;
-        border-top: 1ps solid rgba(255, 255, 255, 0.2)
     }
-    #menu-toggle:checked ~ .nav-links {
+
+    #menu-toggle:checked~.nav-links {
         display: flex;
+    }
+
+    nav a {
+        transition: none;
+    }
+
+    nav a:hover {
+        border-bottom: none;
+        transition: none;
+    }
+
+    .nav-active {
+        padding-bottom: initial;
+        border-bottom: none;
+        transition: none;
+        color: #ff6602;
     }
 }
 
@@ -242,17 +257,21 @@ nav a:hover {
     .slogan-block-card {
         flex-basis: 50%;
     }
+
     .center-image img:nth-child(n+1) {
         display: none;
     }
+
     .center-image img:nth-child(2) {
         display: block;
         max-width: 50%;
     }
+
     .center-image img:nth-child(1) {
         display: block;
         max-width: 50%;
     }
+
     .center-image {
         display: flex;
         text-align: center;
@@ -263,19 +282,22 @@ nav a:hover {
     .slogan-block-card {
         flex-basis: 100%;
     }
+
     .center-image img:nth-child(n+2) {
         display: none;
     }
+
     .center-image img:nth-child(1) {
         display: block;
         max-width: 100%;
     }
+
     .center-image {
         display: block;
         text-align: center;
     }
 }
- 
+
 /* setting for frame with ticket advertisments */
 .tickets {
     background: #0288d1;
@@ -339,16 +361,23 @@ footer a {
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
-        align-items: center; /* Center align the items */
+        align-items: center;
+        /* Center align the items */
     }
+
     footer div {
-        margin: 10px 0; /* Add more spacing for clarity */
+        margin: 10px 0;
+        /* Add more spacing for clarity */
     }
+
     .social-media img {
-        max-width: 28px; /* Smaller icons */
+        max-width: 28px;
+        /* Smaller icons */
     }
+
     footer a {
-        margin: 10px; /* Space out links more evenly */
+        margin: 10px;
+        /* Space out links more evenly */
     }
 }
 
@@ -358,14 +387,20 @@ footer a {
         flex-direction: column;
         text-align: center;
     }
+
     footer div {
         margin: 10px 0;
     }
+
     .social-media img {
-        max-width: 25px; /* Even smaller icons for small screens */
+        max-width: 25px;
+        /* Even smaller icons for small screens */
     }
+
     footer a {
-        margin: 10px 0; /* Stack links vertically */
-        display: block; /* Block display for better stacking */
+        margin: 10px 0;
+        /* Stack links vertically */
+        display: block;
+        /* Block display for better stacking */
     }
 }

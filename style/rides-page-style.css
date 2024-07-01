@@ -8,9 +8,9 @@ body {
     color: #fff;
 }
 
+/* settings for a header */
 header {
     background-color: #0288d1;
-    /* Light blue header */
     color: #fff;
     font-size: 22px;
     padding: 1px 20px;
@@ -21,26 +21,25 @@ header {
     z-index: 2;
 }
 
-header nav a {
+/* setting for navigation buttons in a header */
+nav a {
     font-size: 28px;
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    position: relative;
 }
 
+/* effect on navigation buttons when is hovering */
 nav a:hover {
     border-bottom: 2px solid white;
     transition: 0.05s;
 }
 
+/* settings for navigation active button (this page) */
 .nav-active {
     border-bottom: 2px solid white;
     transition: padding 0.3s;
-}
-
-.nav-active:hover {
-    padding-bottom: 6px;
-    transition: 0.2s;
 }
 
 #menu-icon {
@@ -59,19 +58,22 @@ nav a:hover {
     .nav-links a {
         font-size: calc(3vw - 1%)
     }
+
     header h1 {
         font-size: calc(4vw - 1%);
     }
+
     .side-news {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -82,14 +84,35 @@ nav a:hover {
         background-color: #0288d1;
         z-index: 3;
     }
+
     .nav-links a {
         margin: 10px 0;
         text-align: center;
         padding: 10px;
-        border-top: 1ps solid rgba(255, 255, 255, 0.2)
     }
-    #menu-toggle:checked ~ .nav-links {
+
+    #menu-toggle:checked~.nav-links {
         display: flex;
+    }
+
+    nav a {
+        transition: none;
+    }
+
+    nav a:hover {
+        border-bottom: none;
+        transition: none;
+    }
+
+    .nav-active {
+        padding-bottom: initial;
+        border-bottom: none;
+        transition: none;
+    }
+
+    .nav-active:hover {
+        padding-bottom: 110;
+        transition: none;
     }
 }
 
