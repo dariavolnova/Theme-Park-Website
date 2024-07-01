@@ -180,6 +180,8 @@ nav a:hover {
     /* Center items horizontally */
     align-items: stretch;
     /* Stretch items to have equal height */
+    padding: 0;
+    margin: 0 auto;
 }
 
 /* function that gives movements to gradient */
@@ -217,6 +219,8 @@ nav a:hover {
     flex-direction: column;
     background-color: #f0f0f0;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* modifies gradient border of each card */

@@ -156,6 +156,8 @@ nav a:hover {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center; /* Center items horizontally */
     align-items: stretch; /* Stretch items to have equal height */
+    padding: 0;
+    margin: 0 auto;
 }
 
 /* settings for price inside each card */
@@ -207,6 +209,8 @@ nav a:hover {
     flex-direction: column;
     background-color: #f0f0f0;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* modifies gradient border of each card */
@@ -237,6 +241,19 @@ nav a:hover {
     color: #333;
     list-style-position: outside;
 }
+
+@media(max-width: 900px) {
+    .ticket-block-card {
+        flex-basis: 40%;
+    }
+}
+
+@media(max-width: 768px) {
+    .ticket-block-card {
+        flex-basis: 100%;
+    }
+}
+
 /* settings for the whole footer */
 footer {
     background-color: #0288d1;
