@@ -108,11 +108,7 @@ nav a:hover {
         padding-bottom: initial;
         border-bottom: none;
         transition: none;
-    }
-
-    .nav-active:hover {
-        padding-bottom: 110;
-        transition: none;
+        color: #ff6602;
     }
 }
 

@@ -54,6 +54,29 @@ nav a:hover {
     display: none;
 }
 
+/* setting for "events" top text */
+.hero {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* setting for section titles text */
+.hero h2 {
+    margin-top: 18vh;
+}
+
+/* setting for title inside of a card */
+.events-section h2 {
+    font-size: 2.5em;
+    /* Increased font size for section headings */
+    margin-bottom: 10px;
+}
+
 @media (max-width: 900px) {
     .nav-links a {
         font-size: calc(3vw - 1%)
@@ -63,10 +86,13 @@ nav a:hover {
         font-size: calc(4vw - 1%);
     }
 
-    .side-news {
-        display: none;
+    .hero h2 {
+        font-size: calc(8vw - 1%);
     }
 
+    .events-section h2 {
+        font-size: calc(5vw - 1%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -108,28 +134,8 @@ nav a:hover {
         padding-bottom: initial;
         border-bottom: none;
         transition: none;
+        color: #ff6602;
     }
-
-    .nav-active:hover {
-        padding-bottom: 110;
-        transition: none;
-    }
-}
-
-/* setting for "events" top text */
-.hero {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 3em;
-    text-align: center;
-}
-
-/* setting for section titles text */
-.hero h2 {
-    margin-top: 18vh;
 }
 
 /* setting for a page wrapper */
@@ -139,28 +145,31 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* setting for title inside of a card */
-.events-section h2 {
-    font-size: 2.5em;
-    /* Increased font size for section headings */
-    margin-bottom: 10px;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* setting for all upcoming events column */
 .events-grid {
     display: flex;
-    flex-direction: column; /* Display cards vertically */
+    flex-direction: column;
+    /* Display cards vertically */
     gap: 20px;
-    background-color: #001f4d; /* Dark blue background for event grids */
+    background-color: #001f4d;
+    /* Dark blue background for event grids */
     padding: 20px;
     border-radius: 8px;
 }
 
 /* setting for each upcoming events card */
 .event-card {
-    background-color: #b3e5fc; /* Light blue cards */
+    background-color: #b3e5fc;
+    /* Light blue cards */
     border: 1px solid #0288d1;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 8px;
@@ -182,8 +191,10 @@ nav a:hover {
 /* setting for each text title inside the card */
 .event-card h3 {
     margin: 10px;
-    font-size: 2em; /* Increased font size for event titles */
-    color: #0288d1; /* Light blue for event titles */
+    font-size: 2em;
+    /* Increased font size for event titles */
+    color: #0288d1;
+    /* Light blue for event titles */
 }
 
 /* setting for each text inside the card */
@@ -196,7 +207,8 @@ nav a:hover {
 .event-card button {
     margin: 10px;
     padding: 20px 20px;
-    background-color: #0288d1; /* Light blue button */
+    background-color: #0288d1;
+    /* Light blue button */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -204,14 +216,30 @@ nav a:hover {
     font-size: 16px;
 }
 
+@media (max-width: 900px) {
+    .event-card button {
+        margin: 4px;
+        padding: 10px 10px;
+        background-color: #0288d1;
+        /* Light blue button */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+}
+
 /* settings for filter bar section */
 .filter-bar {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-    background-color: #0288d1; /* Light blue filter bar */
+    background-color: #0288d1;
+    /* Light blue filter bar */
     padding: 10px;
     border-radius: 8px;
+    max-width: fit-content;
 }
 
 /* settings for filter bar sections */
@@ -222,7 +250,22 @@ nav a:hover {
     border: none;
     border-radius: 4px;
     background-color: #fff;
+    max-width: fit-content;
     /* White background for inputs */
+}
+
+@media(max-width: 900px) {
+    .filter-bar select,
+    .filter-bar input {
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        background-color: #fff;
+        /* White background for inputs */
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* settings for the whole footer */
@@ -256,16 +299,23 @@ footer a {
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
-        align-items: center; /* Center align the items */
+        align-items: center;
+        /* Center align the items */
     }
+
     footer div {
-        margin: 10px 0; /* Add more spacing for clarity */
+        margin: 10px 0;
+        /* Add more spacing for clarity */
     }
+
     .social-media img {
-        max-width: 28px; /* Smaller icons */
+        max-width: 28px;
+        /* Smaller icons */
     }
+
     footer a {
-        margin: 10px; /* Space out links more evenly */
+        margin: 10px;
+        /* Space out links more evenly */
     }
 }
 
@@ -275,14 +325,20 @@ footer a {
         flex-direction: column;
         text-align: center;
     }
+
     footer div {
         margin: 10px 0;
     }
+
     .social-media img {
-        max-width: 25px; /* Even smaller icons for small screens */
+        max-width: 25px;
+        /* Even smaller icons for small screens */
     }
+
     footer a {
-        margin: 10px 0; /* Stack links vertically */
-        display: block; /* Block display for better stacking */
+        margin: 10px 0;
+        /* Stack links vertically */
+        display: block;
+        /* Block display for better stacking */
     }
 }
